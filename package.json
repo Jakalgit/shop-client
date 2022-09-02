@@ -26,6 +26,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "install-pack": "npm install && npm install react-google-recaptcha"
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
