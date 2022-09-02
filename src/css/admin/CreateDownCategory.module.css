@@ -1,0 +1,178 @@
+/* Общий блок */
+.downcategory_section {
+    height: 100%;
+}
+.downcategory_block {
+    margin-top: 45vh;
+    transform: translateY(-50%);
+}
+/* Категории */
+.select_text {
+    text-align: center;
+    font-size: 2.7rem;
+    font-family: 'Raleway', sans-serif;
+}
+.select_list {
+    margin-top: 3rem;
+    height: 30rem;
+    border-style: solid;
+    border-width: 0.3rem;
+    border-color: rgba(0, 0, 0, 0.8);
+    border-radius: 1.5rem;
+    overflow: auto;
+}
+.select_item {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 2.1rem;
+    text-align: center;
+    border-style: none;
+    background-color: #fff;
+    font-family: 'Raleway', sans-serif;
+}
+.select_item_click {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 2.1rem;
+    text-align: center;
+    border-style: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+}
+.info_text {
+    font-size: 2.1rem;
+    margin-top: 2rem;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+/* Подкатегория */
+.exist_text {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.7rem;
+}
+.exist_list {
+    margin-top: 2.5rem;
+    height: 30rem;
+    border-style: solid;
+    border-width: 0.3rem;
+    border-color: rgba(0, 0, 0, 0.8);
+    border-radius: 1.5rem;
+    overflow: auto;
+}
+.exist_item {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 2.1rem;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+.input_downcategory {
+    margin-top: 2rem;
+    font-size: 2rem;
+    height: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-style: solid;
+    border-width: 0.3rem;
+    border-color: rgba(0, 0, 0, 0.8);
+    border-radius: 1rem;
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+}
+.input_downcategory:focus {
+    outline: none;
+}
+.button_add {
+    height: 5rem;
+    background-color: #00C853;
+    border-style: none;
+    border-radius: 1rem;
+    font-size: 2.4rem;
+    margin-top: 2rem;
+    transition: all 0.2s linear;
+    font-family: 'Raleway', sans-serif;
+}
+.button_add:hover {
+    background-color: #00E05D;
+}
+.spinner {
+    margin-top: 50vh;
+    margin-left: 50%;
+}
+@media (max-width: 1199px) {
+    .info_text {
+        font-size: 1.4rem;
+        margin-top: 2rem;
+        text-align: center;
+    }
+}
+@media (max-width: 991px) {
+    .select_text {
+        font-size: 2.2rem;
+    }
+    .exist_text {
+        font-size: 2.2rem;
+    }
+    .select_list {
+        margin-top: 3.5rem;
+        height: 25rem;
+    }
+    .exist_list {
+        height: 25rem;
+    }
+    .select_item, .select_item_click,
+    .exist_item {
+        font-size: 1.6rem;
+    }
+    .input_downcategory {
+        font-size: 2rem;
+    }
+    .button_add {
+        font-size: 2rem;
+    }
+}
+@media (max-width: 767px) {
+    .select_list {
+        margin-top: 3rem;
+    }
+}
+@media (max-width: 575px) {
+    .info_text {
+        font-size: 1.2rem;
+    }
+    .input_downcategory {
+        font-size: 1.7rem;
+    }
+    .button_add {
+        font-size: 1.7rem;
+    }
+}
+@media (max-width: 400px) {
+    .info_text {
+        font-size: 1rem;
+    }
+    .select_text {
+        font-size: 2rem;
+    }
+    .exist_text {
+        font-size: 2rem;
+    }
+    .select_list {
+        height: 20rem;
+    }
+    .exist_list {
+        height: 20rem;
+    }
+    .select_item, .select_item_click,
+    .exist_item {
+        font-size: 1.3rem;
+    }
+    .input_downcategory {
+        font-size: 1.3rem;
+    }
+    .button_add {
+        font-size: 1.3rem;
+    }
+}

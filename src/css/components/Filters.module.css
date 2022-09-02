@@ -1,0 +1,299 @@
+html, body {
+    background-color: #fff;
+    font-size: 10px;
+    min-width: 320px
+}
+@keyframes out-fade {
+    0% {
+        opacity: 0;
+        transform: translateY(-1rem);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/*  Фильтры */
+.filters {
+    z-index: 0;
+    margin-top: 10rem;
+}
+.out_of_stock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+.scales {
+    display: block;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.scale {
+    display: inline-flex;
+    margin-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    align-items: center;
+}
+.scale_text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 0;
+    margin-left: 1rem;
+}
+.checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    display: inline-block;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-style: solid;
+    border-radius: 0.5rem;
+    border-width: 0.2rem;
+    border-color: #90A4AE;
+    box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.25);
+    transition: all 0.2s;
+}
+.checkbox:hover {
+    cursor: pointer;
+}
+.checkbox:checked {
+    background-color: #71BADE;
+}
+.text_check {
+    display: inline-block;
+    margin-left: 1rem;
+    margin-bottom: 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.7rem;
+}
+.dropdown_help {
+    position: relative;
+}
+.dropdown_help .bar:hover {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.bar {
+    height: 6rem;
+    border-radius: 1.5rem;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s;
+    box-shadow: 1rem 1rem 2rem 0.2rem rgba(0, 0, 0, 0.25);
+}
+.help_bar {
+    position: relative;
+}
+.name_bar {
+    font-size: 2.5rem;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    margin-bottom: 0;
+}
+.dropdown_list {
+    display: none;
+    position: absolute;
+    box-shadow: 1rem 1rem 2rem 0.2rem rgba(0, 0, 0, 0.25);
+    transition: all 0.2s;
+    border-radius: 0 0 1.5rem 1.5rem;
+    clip: rect(0, 100vw, 100vw, -10px);
+    z-index: 0;
+    animation: out-fade 0.3s forwards;
+}
+.dropdown_items {
+    height: 15.5rem;
+    overflow: auto;
+    background-color: #fff;
+}
+.dropdown_items::-webkit-scrollbar {
+    width: 0;
+}
+.clean {
+    height: 5rem;
+    background-color: #E41515;
+    border-radius: 0 0 1.5rem 1.5rem;
+    border-style: none;
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: 'Raleway', sans-serif;
+}
+.type_bar:hover .type_list {
+    display: block;
+}
+.type_bar:hover .bar {
+    cursor: pointer;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.brand_bar:hover .brand_list {
+    display: block;
+}
+.brand_bar:hover .bar {
+    cursor: pointer;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.model_bar:hover .model_list {
+    display: block;
+}
+.model_bar:hover .bar {
+    cursor: pointer;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+/* Стиль элемнтов списка */
+.bar_list_item {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    background-color: #fff;
+    border-style: none;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    transition: all 0.2s;
+}
+.bar_list_item:hover {
+    background-color: #0048D0;
+    color: #fff;
+}
+@media (max-width: 991px) {
+    .bar {
+        border-radius: 1rem;
+        box-shadow: 0.5rem 0.5rem 1.5rem 0.2rem rgba(0, 0, 0, 0.25);
+    }
+    .name_bar {
+        font-size: 2.1rem;
+    }
+    .dropdown_list {
+        box-shadow: 0.5rem 0.5rem 1.5rem 0.2rem rgba(0, 0, 0, 0.25);
+        border-radius: 0 0 1rem 1rem;
+    }
+    .bar_list_item {
+        font-size: 1.7rem;
+    }
+    .clean {
+        border-radius: 0 0 1rem 1rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .filters {
+        margin-top: 7rem;
+    }
+    .checkbox {
+        width: 2rem;
+        height: 2rem;
+    }
+    .scale {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        margin-top: 1.5rem;
+    }
+    .scale_text {
+        font-size: 1.7rem;
+    }
+    .text_check {
+        font-size: 1.4rem;
+        margin-left: 0.7rem;
+    }
+    .clean {
+        height: 4rem;
+        font-size: 1.2rem;
+    }
+    .section_color {
+        margin-top: 5rem;
+        height: 13rem;
+    }
+    .bar {
+        height: 5rem;
+    }
+    .name_bar {
+        font-size: 1.9rem;
+    }
+    .dropdown_items {
+        height: 12rem;
+    }
+    /* Стиль элемнтов списка */
+    .bar_list_item {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 575px) {
+    @keyframes out-fade-small {
+        0% {
+            opacity: 0;
+            transform: translateY(-0.2rem);
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    .bar {
+        height: 4rem;
+        box-shadow: 0.3rem 0.3rem 1rem 0.2rem rgba(0, 0, 0, 0.25);
+        border-radius: 0.7rem;
+    }
+    .name_bar {
+        font-size: 1.4rem;
+    }
+    .bar_list_item {
+        font-size: 1.3rem;
+    }
+    .dropdown_list {
+        box-shadow: 0.3rem 0.3rem 1rem 0.2rem rgba(0, 0, 0, 0.25);
+        border-radius: 0 0 0.7rem 0.7rem;
+        animation: out-fade-small 0.3s forwards;
+    }
+    .dropdown_items {
+        height: 10rem;
+    }
+    .clean {
+        height: 3.3rem;
+        border-radius: 0 0 0.7rem 0.7rem;
+    }
+}
+
+@media (max-width: 460px) {
+    .scale {
+        padding-left: 0.7rem;
+        padding-right: 0.7rem;
+        margin-top: 0.7rem;
+    }
+    .scale_text {
+        font-size: 1.3rem;
+        margin-left: 0.5rem;
+    }
+}
+
+@media (max-width: 430px) {
+    .checkbox {
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+    .text_check {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .filters {
+        margin-top: 4rem;
+    }
+    .clean {
+        font-size: 1.1rem;
+        height: 2.7rem;
+    }
+    .bar {
+        height: 3.5rem;
+    }
+    .name_bar {
+        font-size: 1.2rem;
+    }
+    /* Стиль элемнтов списка */
+    .bar_list_item {
+        font-size: 1rem;
+    }
+}

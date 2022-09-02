@@ -1,0 +1,22 @@
+@keyframes show-modal {
+    0% {
+        opacity: 0;
+        transform: translateY(-10rem);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+.modal-item-enter-active {
+    animation: show-modal 0.4s forwards;
+}
+.modal-item-done {
+    opacity: 1;
+}
+.modal-item-exit-active {
+    animation: show-modal 0.4s reverse;
+}
+.modal-item.exited {
+    opacity: 0;
+}

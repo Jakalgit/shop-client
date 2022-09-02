@@ -1,0 +1,68 @@
+/* Стиль header */
+html,
+body {
+    background-color: #fff;
+    font-family: 'Rubik', sans-serif;
+    font-size: 10px;
+    min-width: 320px;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 10rem;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: saturate(180%) blur(20px);
+}
+
+.navbar_brand {
+    color: #ffffff;
+    font-size: 4rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+.navbar_link {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: center;
+    font-size: 1.6rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+.navbar_link_user {
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+@media (max-width: 1199px) {
+    .navbar_link {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+    .navbar_link_user {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar_link {
+        text-align: left;
+    }
+}
+
+@media (max-width: 575px) {
+    .header {
+        min-height: 8rem;
+    }
+    .navbar_link {
+        font-size: 1.4rem;
+    }
+
+    .navbar_brand {
+        font-size: 2.5rem;
+    }
+}
