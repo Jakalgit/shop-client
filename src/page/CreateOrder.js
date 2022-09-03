@@ -45,7 +45,7 @@ const CreateOrder = () => {
 
     const [loading, setLoading] = useState(true)
 
-    const [stateGoods, setStateGoods] = useState([])
+    const [stateGoods, setStateGoods] = useState([{}])
     useEffect(() => {
         let count = item.basketItems.length
         let k = 0
